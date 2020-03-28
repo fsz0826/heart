@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+#container {
+  display: inline-block;
+  position: relative;
+  margin: 150px;
+  transition: all 1s;
+}
+#container:hover {
+  transform: scale(1.2);
+}
+#container > .left {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  border-radius: 50% 0% 0% 50%;
+  bottom: 100%;
+  right: 100%;
+  transform: rotate(45deg) translateX(80px);
+  background: red;
+}
+#container > .right {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 100%;
+  left: 100%;
+  border-radius: 50% 50% 0% 0%;
+  transform: rotate(45deg) translateY(80px);
+  background: red;
+}
+#container > .bottom {
+  height: 100px;
+  width: 100px;
+  transform: rotate(45deg);
+  background: red;
+}

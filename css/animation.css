@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+#container {
+  margin: 150px;
+  display: inline-block;
+  position: relative;
+  animation: 0.8s xxx infinite alternate-reverse;
+}
+@keyframes xxx {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+#container > .left {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  border-radius: 50% 0% 0% 50%;
+  bottom: 100%;
+  right: 100%;
+  transform: rotate(45deg) translateX(80px);
+  background: red;
+}
+#container > .right {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  border-radius: 50% 50% 0% 0%;
+  bottom: 100%;
+  left: 100%;
+  transform: rotate(45deg) translateY(80px);
+  background: red;
+}
+#container > .bottom {
+  height: 100px;
+  width: 100px;
+  transform: rotate(45deg);
+  background: red;
+}
